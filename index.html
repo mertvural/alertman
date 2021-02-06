@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="alertman.css" />
+    <script src="alertman.js"></script>
+    <title>Alertman</title>
+    <style>
+        .btn {width:150px;height: 50px;line-height: 50px;background: none;cursor: pointer;outline: none;color:#fff;border: 0;margin: 0 10px;font-weight: 700;font-size: 14px;}
+        .btn.error {background: red;}
+        .btn.success {background: green;}
+        .btn.info {background: orange;}
+    </style>
+</head>
+<body>
+    
+
+<div style="display: flex;align-items: center;justify-content: center;height: 100vh;">
+    <button class="btn success" onclick="success()">Success</button>
+    <button class="btn error" onclick="error()">Error</button>
+    <button class="btn info" onclick="info()">Info</button>
+</div>
+
+
+<script>
+
+
+function success() {
+
+    alertman("success", "İşlem başarılı bir şekilde gerçekleşti")
+
+}
+
+function error() {
+
+    alertman("error", "Bir sorunla karşılaşıldı!")
+
+}   
+
+function info() {
+    
+    alertman("info", "Burası bilgi alanıdır")   
+
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
