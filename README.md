@@ -5,7 +5,7 @@
 
 ### Kullanım için;
         alertman.js ve alertman.css i head tagları içine ekleyiniz.
- ### popup'ı çağırmak için
+ ### Popup'ı çağırmak için
         alertman("success", "İşlem başarılı bir şekilde gerçekleşti")
  
         alertman("error", "Bir sorunla karşılaşıldı!")
